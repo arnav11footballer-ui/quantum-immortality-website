@@ -1,0 +1,823 @@
+/* ==========================================
+   QUANTUM IMMORTALITY RESEARCH INSTITUTE
+   ADVANCED RESEARCH PORTAL THEME
+========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- BODY ---------- */
+
+body {
+  font-family:
+    "Inter",
+    "Segoe UI",
+    sans-serif;
+
+  background:
+    linear-gradient(
+      rgba(5, 10, 20, 0.88),
+      rgba(5, 10, 20, 0.88)
+    ),
+    url("/test.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  color: #e2e8f0;
+
+  min-height: 100vh;
+}
+
+/* ---------- NAVBAR ---------- */
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  padding: 18px 40px;
+
+  background: rgba(8, 15, 28, 0.95);
+
+  backdrop-filter: blur(20px);
+
+  border-bottom: 1px solid #1e293b;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #cbd5e1;
+
+  text-decoration: none;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #7dd3fc;
+}
+
+/* ---------- MAIN ---------- */
+
+main {
+  padding: 40px;
+}
+
+/* ---------- HOME LAYOUT ---------- */
+
+.home-layout {
+  display: flex;
+  gap: 30px;
+}
+
+/* ---------- SIDEBAR ---------- */
+
+.sidebar {
+  width: 280px;
+  min-width: 280px;
+
+  background: rgba(15, 23, 42, 0.92);
+
+  backdrop-filter: blur(18px);
+
+  border: 1px solid #1e293b;
+
+  border-radius: 24px;
+
+  padding: 25px;
+}
+
+.sidebar h3 {
+  color: #7dd3fc;
+
+  margin-bottom: 25px;
+
+  font-size: 1.2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  display: block;
+
+  padding: 12px;
+
+  border-radius: 12px;
+
+  color: #cbd5e1;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: rgba(125, 211, 252, 0.1);
+
+  color: #7dd3fc;
+}
+
+/* ---------- CONTENT ---------- */
+
+.content {
+  flex: 1;
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+  padding: 80px 60px;
+
+  border-radius: 30px;
+
+  min-height: 500px;
+
+  background:
+    linear-gradient(
+      rgba(15, 23, 42, 0.92),
+      rgba(15, 23, 42, 0.92)
+    );
+
+  border: 1px solid #1e293b;
+
+  box-shadow:
+    0 15px 50px rgba(0,0,0,0.4);
+
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+
+  font-weight: 800;
+
+  color: #f8fafc;
+
+  margin-bottom: 20px;
+
+  line-height: 1.1;
+}
+
+.hero p {
+  font-size: 1.2rem;
+
+  line-height: 1.9;
+
+  color: #cbd5e1;
+
+  max-width: 900px;
+}
+
+.hero-button {
+  margin-top: 30px;
+
+  padding: 15px 30px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: #0ea5e9;
+
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background: #0284c7;
+}
+
+/* ---------- PAGE CONTAINER ---------- */
+
+.page-container {
+  max-width: 1200px;
+
+  margin: 40px auto;
+
+  padding: 50px;
+
+  background: rgba(15, 23, 42, 0.94);
+
+  backdrop-filter: blur(18px);
+
+  border: 1px solid #1e293b;
+
+  border-radius: 28px;
+
+  box-shadow:
+    0 15px 50px rgba(0,0,0,0.4);
+}
+
+.page-container h1 {
+  font-size: 3.2rem;
+
+  color: #f8fafc;
+
+  margin-bottom: 25px;
+}
+
+.page-container h2 {
+  color: #7dd3fc;
+
+  margin-top: 35px;
+  margin-bottom: 15px;
+
+  font-size: 1.8rem;
+}
+
+.page-container p {
+  color: #cbd5e1;
+
+  line-height: 1.9;
+
+  margin-bottom: 20px;
+
+  font-size: 1.05rem;
+}
+
+/* ---------- SECTION TITLES ---------- */
+
+.content h2 {
+  font-size: 2rem;
+
+  color: #f8fafc;
+
+  margin-bottom: 25px;
+
+  margin-top: 50px;
+}
+
+/* ---------- GRID ---------- */
+
+.grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 25px;
+}
+
+/* ---------- CARDS ---------- */
+
+.card {
+  background: rgba(15, 23, 42, 0.92);
+
+  border: 1px solid #1e293b;
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+
+  display: block;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+
+  border-color: #38bdf8;
+
+  box-shadow:
+    0 10px 35px rgba(56,189,248,0.15);
+}
+
+.card h3 {
+  color: #f8fafc;
+
+  margin-bottom: 15px;
+
+  font-size: 1.3rem;
+}
+
+.card p {
+  color: #cbd5e1;
+
+  line-height: 1.8;
+}
+
+/* ---------- FEATURED SECTION ---------- */
+
+.featured-banner {
+  background: rgba(15, 23, 42, 0.92);
+
+  border: 1px solid #1e293b;
+
+  border-radius: 24px;
+
+  padding: 35px;
+
+  margin: 40px 0;
+}
+
+.featured-banner h3 {
+  color: #f8fafc;
+
+  margin-bottom: 10px;
+}
+
+.featured-banner p {
+  color: #cbd5e1;
+
+  line-height: 1.8;
+}
+
+/* ---------- SEARCH ---------- */
+
+input[type="text"] {
+  width: 100%;
+
+  padding: 15px;
+
+  border-radius: 12px;
+
+  border: 1px solid #334155;
+
+  background: #0f172a;
+
+  color: white;
+
+  font-size: 1rem;
+}
+
+input[type="text"]:focus {
+  outline: none;
+
+  border-color: #38bdf8;
+}
+
+/* ---------- TAGS ---------- */
+
+.tag {
+  display: inline-block;
+
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  background: rgba(56,189,248,0.1);
+
+  color: #7dd3fc;
+
+  margin-right: 8px;
+  margin-top: 8px;
+
+  font-size: 0.8rem;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  margin-top: 60px;
+
+  text-align: center;
+
+  padding: 30px;
+
+  color: #94a3b8;
+
+  border-top: 1px solid #1e293b;
+}
+
+/* ---------- SCROLLBAR ---------- */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 900px) {
+
+  .home-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .hero {
+    padding: 50px 30px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-container {
+    padding: 25px;
+  }
+}
+.stat-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 20px;
+
+  margin: 40px 0;
+}
+
+.stat-card {
+  background: rgba(15, 23, 42, 0.92);
+
+  border: 1px solid #1e293b;
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-size: 2.5rem;
+
+  color: #7dd3fc;
+
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  color: #cbd5e1;
+}
+.scientist-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 25px;
+
+  margin-top: 20px;
+}
+
+.scientist-card {
+  background: rgba(15, 23, 42, 0.92);
+
+  border: 1px solid #1e293b;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  transition: 0.3s;
+}
+
+.scientist-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #38bdf8;
+}
+
+.scientist-image {
+  width: 100%;
+  height: 300px;
+
+  object-fit: cover;
+}
+
+.scientist-card h3 {
+  padding: 15px 20px 5px;
+
+  color: white;
+}
+
+.scientist-card span {
+  display: block;
+
+  padding: 0 20px;
+
+  color: #7dd3fc;
+
+  font-size: 0.9rem;
+}
+
+.scientist-card p {
+  padding: 15px 20px 20px;
+
+  color: #cbd5e1;
+
+  line-height: 1.7;
+}
+.paper-container {
+  max-width: 1000px;
+
+  margin: 40px auto;
+
+  padding: 60px;
+
+  background: rgba(15, 23, 42, 0.96);
+
+  border: 1px solid #1e293b;
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.45);
+}
+
+.paper-meta {
+  color: #94a3b8;
+
+  margin-bottom: 30px;
+}
+
+.paper-section {
+  margin-top: 40px;
+}
+
+.paper-section h2 {
+  color: #7dd3fc;
+
+  margin-bottom: 15px;
+}
+
+.paper-section p {
+  color: #cbd5e1;
+
+  line-height: 1.9;
+}
+.scientist-card-link {
+  text-decoration: none;
+}
+
+.scientist-card {
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid #1e293b;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+  height: 100%;
+}
+
+.scientist-card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+}
+
+.scientist-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.scientist-content {
+  padding: 20px;
+}
+
+.scientist-content h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.scientist-content span {
+  display: block;
+  color: #7dd3fc;
+  margin-bottom: 15px;
+}
+
+.scientist-content p {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+/* =========================
+   INSTITUTE METRICS
+========================= */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.stat-card {
+  background: rgba(8, 18, 45, 0.95);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(12px);
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.25);
+  border-color: #38bdf8;
+}
+
+.stat-card h2 {
+  font-size: 2.8rem;
+  color: #38bdf8;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.stat-card p {
+  color: #cbd5e1;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* =========================
+   FEATURED SCIENTISTS
+========================= */
+
+.scientist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.scientist-card {
+  background: rgba(8, 18, 45, 0.95);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.scientist-card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);
+}
+
+.scientist-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.scientist-content {
+  padding: 24px;
+}
+
+.scientist-content h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.scientist-content p {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+/* =========================
+   RESEARCH SECTIONS
+========================= */
+
+.section-title {
+  font-size: 2rem;
+  color: #38bdf8;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #38bdf8;
+  margin-top: 10px;
+}
+
+/* =========================
+   PROFESSIONAL CARDS
+========================= */
+
+.card {
+  background: rgba(8, 18, 45, 0.95);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 20px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.2);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .stats-grid,
+  .scientist-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card h2 {
+    font-size: 2rem;
+  }
+}
+.page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(320px, 1fr)
+  );
+  gap: 24px;
+}
+
+.card {
+  background: rgba(8, 18, 45, 0.95);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 18px;
+  padding: 24px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+}
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.timeline-card {
+  background: rgba(8, 18, 45, 0.95);
+  border-left: 5px solid #38bdf8;
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.timeline-card:hover {
+  transform: translateX(10px);
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.2);
+}
+
+.timeline-year {
+  color: #38bdf8;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
