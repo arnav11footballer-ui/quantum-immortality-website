@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   title: "Quantum Immortality Research Institute",
   description:
     "Advanced research on Quantum Physics, Consciousness, Quasiparticles, Quantum Biology, and Quantum Immortality",
+  manifest: "/manifest.json",
+  themeColor: "#0f172a",
 };
 
 export default function RootLayout({
@@ -21,25 +23,20 @@ export default function RootLayout({
 
           <Link href="/search">Search</Link>
 
-
           <Link href="/articles">Articles</Link>
           <Link href="/equations">Equations</Link>
-          <Link href="/references">
-           References
-          </Link>
+
+          <Link href="/references">References</Link>
 
           <Link href="/categories">Categories</Link>
 
           <Link href="/publications">Publications</Link>
-          
+
           <Link href="/scientists">Scientists</Link>
           <Link href="/timeline">Timeline</Link>
           <Link href="/mission">Mission</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
-
-
-          
         </nav>
 
         {children}
